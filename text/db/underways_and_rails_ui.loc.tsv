@@ -1,0 +1,20 @@
+key	text	tooltip
+#Loc;1;text/db/underways_and_rails_ui.loc		
+cruise_button	Naval Networks	false
+cannot_use_in_this_stance	Cannot be used in current stance	false
+unavailable_reason_notdorfs	Not owned	false
+unavailable_reason_notus	Must be owned by own or allied faction	false
+unavailable_reason_notlvl3	Settlement has not been rebuilt	false
+you_are_here	You are here	false
+can_move_here	You can move here	false
+can_move_here_cost	You can move here\\nIt will cost [[img:icon_treasury]][[/img]] _amount_	false
+cannot_move_actionpoints	Must not have moved this turn	false
+cannot_move_cost	[[img:icon_treasury]][[/img]] _amount_ needed	false
+cannot_move_connected	Must be at an owned, upgraded, and valid port	false
+cannot_move_atport	Must be at an owned and upgraded port!	false
+cannot_move_owned	Must be controlled by own or allied faction	false
+cannot_move_built	Main settlement must be built to level 3	false
+major_port	This is a major port, controlling it will reduce costs of travel both in and out of the local sea!	false
+hidden_port	Your hidden outpost allows you to smuggle forces into this port, at a greater cost!	false
+at_hidden_port	Your hidden outpost allows you to smuggle forces out of your current port, at a greater cost!	false
+this_hidden_port	This is a hidden port!	false

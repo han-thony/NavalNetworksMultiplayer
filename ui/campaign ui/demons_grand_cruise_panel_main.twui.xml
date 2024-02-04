@@ -1,0 +1,498 @@
+<?xml version="1.0"?>
+<layout
+	version="141"
+	comment=""
+	precache_condition="">
+	
+	<hierarchy>
+		<root this="34343434-0000-0000-0000000000000000">
+			
+			<demons_grand_cruise_panel_main this="34343434-0001-0000-0000000000000000">
+				
+				<black_background_4k this="34343434-0002-0000-0000000000000000"/>
+				<frame_4k this="34343434-0003-0000-0000000000000000"/>
+				<worldmap this="34343434-0004-0000-0000000000000000"/>
+				
+				<button_close_holder this="34343434-0005-0000-0000000000000000">
+					<button_demons_grand_cruise_worldmap_close this="34343434-0006-0000-0000000000000000"/>
+				</button_close_holder>
+				
+				<header_holder this="34343434-0007-0000-0000000000000000">
+					<tx_header this="34343434-0008-0000-0000000000000000"/>
+				</header_holder>
+				
+				<worldmap_scroll this="34343434-0009-0000-0000000000000000">
+					<tx_worldmap_scroll this="34343434-0010-0000-0000000000000000"/>
+				</worldmap_scroll>
+				
+			</demons_grand_cruise_panel_main>
+			
+		</root>
+	</hierarchy>
+	
+	<components>
+		
+		<root
+			this="34343434-0000-0000-0000000000000000"
+			id="root"
+			tooltipslocalised="true"
+			uniqueguid="34343434-0000-0000-0000000000000000"
+			currentstate="34343434-0000-0001-0000000000000000"
+			defaultstate="34343434-0000-0001-0000000000000000">
+			<componentimages>
+				<component_image
+					this="34343434-0000-0002-0000000000000000"
+					uniqueguid="34343434-0000-0002-0000000000000000"/>
+			</componentimages>
+			<states>
+				<default
+					this="34343434-0000-0001-0000000000000000"
+					name="default"
+					uniqueguid="34343434-0000-0001-0000000000000000">
+					<imagemetrics>
+						<image
+							this="34343434-0000-0003-0000000000000000"
+							uniqueguid="34343434-0000-0003-0000000000000000"
+							componentimage="34343434-0000-0002-0000000000000000"
+							colour="#1C1C1CFF"/>
+					</imagemetrics>
+				</default>
+			</states>
+		</root>
+		
+		<demons_grand_cruise_panel_main
+			this="34343434-0001-0000-0000000000000000"
+			id="demons_grand_cruise_panel_main"
+			docking="Center"
+			component_anchor_point="0.50,0.50"
+			priority="1000"
+			tooltipslocalised="true"
+			uniqueguid="34343434-0001-0000-0000000000000000"
+			dimensions="1440.00,1120.00"
+			currentstate="34343434-0001-0001-0000000000000000"
+			defaultstate="34343434-0001-0001-0000000000000000">
+			<componentimages>
+				<component_image
+					this="34343434-0001-0002-0000000000000000"
+					uniqueguid="34343434-0001-0002-0000000000000000"/>
+			</componentimages>
+			<states>
+				<default
+					this="34343434-0001-0001-0000000000000000"
+					name="default"
+					width="1440"
+					height="1120"
+					interactive="true"
+					uniqueguid="34343434-0001-0001-0000000000000000">
+					<imagemetrics>
+						<image
+							this="34343434-0001-0003-0000000000000000"
+							uniqueguid="34343434-0001-0003-0000000000000000"
+							componentimage="34343434-0001-0002-0000000000000000"
+							width="1440"
+							height="1120"
+							colour="#272727FF"/>
+					</imagemetrics>
+				</default>
+			</states>
+		</demons_grand_cruise_panel_main>
+		
+		<black_background_4k
+			this="34343434-0002-0000-0000000000000000"
+			id="black_background_4k"
+			uniqueguid_in_template="34343434-0002-0001-0000000000000000"
+			docking="Center"
+			component_anchor_point="0.50,0.50"
+			priority="60"
+			tooltipslocalised="true"
+			uniqueguid="34343434-0002-0000-0000000000000000"
+			currentstate="34343434-0002-0002-0000000000000000"
+			defaultstate="34343434-0002-0002-0000000000000000">
+			<callbackwithcontextlist>
+				<callback_with_context callback_id="ScreenSizedComponent"/>
+			</callbackwithcontextlist>
+			<componentimages>
+				<component_image
+					this="34343434-0002-0003-0000000000000000"
+					uniqueguid="34343434-0002-0003-0000000000000000"/>
+			</componentimages>
+			<states>
+				<default
+					this="34343434-0002-0002-0000000000000000"
+					name="default"
+					width="1600"
+					height="900"
+					interactive="true"
+					uniqueguid="34343434-0002-0002-0000000000000000">
+					<imagemetrics>
+						<image
+							this="34343434-0002-0004-0000000000000000"
+							uniqueguid="34343434-0002-0004-0000000000000000"
+							componentimage="34343434-0002-0003-0000000000000000"
+							width="1600"
+							height="900"
+							colour="#000000F0"/>
+					</imagemetrics>
+				</default>
+			</states>
+		</black_background_4k>
+		
+		<frame_4k
+			this="34343434-0003-0000-0000000000000000"
+			id="frame_4k"
+			offset="-6.00,-6.00"
+			docking="Center"
+			component_anchor_point="0.50,0.50"
+			priority="99999"
+			tooltipslocalised="true"
+			uniqueguid="34343434-0003-0000-0000000000000000"
+			currentstate="34343434-0003-0001-0000000000000000"
+			defaultstate="34343434-0003-0001-0000000000000000">
+			<callbackwithcontextlist>
+				<callback_with_context
+					callback_id="ContextVisibilitySetter"
+					context_object_id="CcoStaticObject"
+					context_function_id="self.ParentContext.IsFullscreen==false"/>
+			</callbackwithcontextlist>
+			<userproperties>
+				<property
+					name="dynamic_child"
+					value="1"/>
+			</userproperties>
+			<componentimages>
+				<component_image
+					this="34343434-0003-0003-0000000000000000"
+					uniqueguid="34343434-0003-0003-0000000000000000"
+					imagepath="ui/skins/default/panel_back_border.png"/>
+			</componentimages>
+			<states>
+				<default
+					this="34343434-0003-0001-0000000000000000"
+					name="default"
+					width="1452"
+					height="1132"
+					uniqueguid="34343434-0003-0001-0000000000000000">
+					<imagemetrics>
+						<image
+							this="34343434-0003-0002-0000000000000000"
+							uniqueguid="34343434-0003-0002-0000000000000000"
+							componentimage="34343434-0003-0003-0000000000000000"
+							width="1452"
+							height="1132"
+							tile="true"
+							margin="30.00,30.00,30.00,30.00"/>
+					</imagemetrics>
+				</default>
+			</states>
+		</frame_4k>
+		
+		<worldmap
+			this="34343434-0004-0000-0000000000000000"
+			id="worldmap"
+			docking="Top Left"
+			dock_offset="0.00,1.00"
+			uniqueguid="34343434-0004-0000-0000000000000000"
+			currentstate="34343434-0004-0001-0000000000000000"
+			defaultstate="34343434-0004-0001-0000000000000000">
+			<componentimages>
+				<component_image
+					this="34343434-0004-0001-000000000000001B"
+					uniqueguid="34343434-0004-0001-000000000000001B"
+					imagepath="campaign_maps/wh3_main_combi_map_2/wh3_main_combi_map_seaports.png"/>
+			</componentimages>
+			<states>
+				<default
+					this="34343434-0004-0001-0000000000000000"
+					name="default"
+					width="1440"
+					height="1120"
+					interactive="false"
+					uniqueguid="34343434-0004-0001-0000000000000000">
+					<imagemetrics>
+						<image
+							this="34343434-0004-0001-000000000000001A"
+							uniqueguid="34343434-0004-0001-000000000000001A"
+							componentimage="34343434-0004-0001-000000000000001B"
+							offset="0.00,0.00"
+							width="1440"
+							height="1120"
+							dockpoint="Top Left"/>
+					</imagemetrics>
+				</default>
+			</states>
+		</worldmap>
+		
+		<button_close_holder
+			this="34343434-0005-0000-0000000000000000"
+			id="button_close_holder"
+			offset="0.00,860.00"
+			allowhorizontalresize="false"
+			allowverticalresize="false"
+			docking="Bottom Left"
+			component_anchor_point="0.00,1.00"
+			priority="99999"
+			tooltipslocalised="true"
+			uniqueguid="34343434-0005-0000-0000000000000000"
+			currentstate="34343434-0005-0001-0000000000000000"
+			defaultstate="34343434-0005-0001-0000000000000000">
+			<callbackwithcontextlist>
+				<callback_with_context callback_id="TopmostObjectCallback"/>
+			</callbackwithcontextlist>
+			<componentimages>
+				<component_image
+					this="34343434-0005-0002-0000000000000000"
+					uniqueguid="34343434-0005-0002-0000000000000000"
+					imagepath="ui/skins/default/button_back_frame_corner.png"/>
+			</componentimages>
+			<states>
+				<default
+					this="34343434-0005-0001-0000000000000000"
+					name="default"
+					width="72"
+					height="40"
+					interactive="true"
+					uniqueguid="34343434-0005-0001-0000000000000000">
+					<imagemetrics>
+						<image
+							this="34343434-0005-0003-0000000000000000"
+							uniqueguid="34343434-0005-0003-0000000000000000"
+							componentimage="34343434-0005-0002-0000000000000000"
+							width="72"
+							height="40"/>
+					</imagemetrics>
+				</default>
+			</states>
+		</button_close_holder>
+		
+		<button_demons_grand_cruise_worldmap_close
+			this="34343434-0006-0000-0000000000000000"
+			id="button_demons_grand_cruise_worldmap_close"
+			template_id="round_medium_button"
+			part_of_template="true"
+			uniqueguid_in_template="4E08AA99-2BAB-4DB6-AC47ACC0CEBD26BE"
+			uniqueguid="34343434-0006-0000-0000000000000000"
+			dimensions="56.00,56.00"
+			dock_point="Top Center"
+			offset="-1.00,-20.00"
+			priority="99999"
+			sound_category="UI_GBL_HUD_Generic_Accept_Confirm">
+			<state_uniqueguids>
+				<state_uniqueguid
+					name="active"
+					uniqueguid="34343434-0006-0002-0000000000000000"/>
+				<state_uniqueguid
+					name="down"
+					uniqueguid="34343434-0006-0003-0000000000000000"/>
+				<state_uniqueguid
+					name="down_off"
+					uniqueguid="34343434-0006-0004-0000000000000000"/>
+				<state_uniqueguid
+					name="hover"
+					uniqueguid="34343434-0006-0005-0000000000000000"/>
+				<state_uniqueguid
+					name="inactive"
+					uniqueguid="34343434-0006-0006-0000000000000000"/>
+			</state_uniqueguids>
+			<component_image_uniqueguids>
+				<component_image_uniqueguid
+					name="ui/skins/default/icon_home.png"
+					uniqueguid="34343434-0006-0007-0000000000000000"/>
+				<component_image_uniqueguid
+					name="ui/skins/default/button_round_medium_pressed.png"
+					uniqueguid="34343434-0006-0008-0000000000000000"/>
+				<component_image_uniqueguid
+					name="ui/skins/default/button_round_medium_hover.png"
+					uniqueguid="34343434-0006-0009-0000000000000000"/>
+				<component_image_uniqueguid
+					name="ui/skins/default/button_round_medium_active.png"
+					uniqueguid="34343434-0006-0010-0000000000000000"/>
+				<component_image_uniqueguid
+					name="ui/skins/default/button_round_medium_inactive.png"
+					uniqueguid="34343434-0006-0011-0000000000000000"/>
+				<component_image_uniqueguid
+					name="ui/skins/default/button_round_medium_underlay.png"
+					uniqueguid="34343434-0006-0012-0000000000000000"/>
+			</component_image_uniqueguids>
+			<user_properties>
+				<property
+					name="disable_override"
+					value="resizable"/>
+				<property
+					name="disable_override0"
+					value="CallbackAnimTrigger"/>
+				<property
+					name="dynamic_image"
+					value="0"/>
+				<property
+					name="override_sound"
+					value=""/>
+			</user_properties>
+			<localised_texts>
+				<localised_text/>
+				<localised_text
+					state="active"
+					is_text_localised="false"/>
+				<localised_text
+					state="down"
+					is_text_localised="false"/>
+				<localised_text
+					state="down_off"
+					is_text_localised="false"/>
+				<localised_text
+					state="hover"
+					is_text_localised="false"/>
+				<localised_text
+					state="inactive"
+					is_text_localised="false"/>
+			</localised_texts>
+			<override_images>
+				<element value="ui/skins/default/icon_home.png"/>
+				<element value="ui/skins/default/button_round_medium_pressed.png"/>
+				<element value="ui/skins/default/button_round_medium_hover.png"/>
+				<element value="ui/skins/default/button_round_medium_active.png"/>
+				<element value="ui/skins/default/button_round_medium_inactive.png"/>
+				<element value="ui/skins/default/button_round_medium_underlay.png"/>
+				<element value=""/>
+			</override_images>
+		</button_demons_grand_cruise_worldmap_close>
+		
+		<header_holder
+			this="34343434-0007-0000-0000000000000000"
+			id="header_holder"
+			docking="Top Center"
+			dock_offset="0.00,-30.00"
+			uniqueguid="34343434-0007-0000-0000000000000000"
+			currentstate="34343434-0007-0001-0000000000000000"
+			defaultstate="34343434-0007-0001-0000000000000000">
+			<componentimages>
+				<component_image
+					this="34343434-0007-0001-000000000000001B"
+					uniqueguid="34343434-0007-0001-000000000000001B"
+					imagepath="ui/skins/wh_main_dwf_dwarfs/panel_title_large.png"/>
+			</componentimages>
+			<states>
+				<default
+					this="34343434-0007-0001-0000000000000000"
+					name="default"
+					width="769"
+					height="69"
+					uniqueguid="34343434-0007-0001-0000000000000000">
+					<imagemetrics>
+						<image
+							this="34343434-0007-0001-000000000000001A"
+							uniqueguid="34343434-0007-0001-000000000000001A"
+							componentimage="34343434-0007-0001-000000000000001B"
+							offset="0.00,0.00"
+							width="769"
+							height="69"
+							dockpoint="Top Center"/>
+					</imagemetrics>
+				</default>
+			</states>
+		</header_holder>
+		
+		<tx_header
+			this="34343434-0008-0000-0000000000000000"
+			id="tx_header"
+			allowhorizontalresize="false"
+			docking="Center"
+			dock_offset="0.00,-2.00"
+			priority="255"
+			tooltipslocalised="true"
+			uniqueguid="34343434-0008-0000-0000000000000000"
+			currentstate="34343434-0008-0001-0000000000000000">
+			<states>
+				<newstate
+					this="34343434-0008-0001-0000000000000000"
+					name="NewState"
+					width="340"
+					height="26"
+					uniqueguid="34343434-0008-0001-0000000000000000">
+					<component_text
+						text=""
+						textxoffset="15.00,8.00"
+						textyoffset="5.00,5.00"
+						texthbehaviour="Resize"
+						textlocalised="true"
+						textvalign="Center"
+						texthalign="Center"
+						font_m_font_name="brand_header"
+						font_m_size="24"
+						font_m_colour="#FFF8D7FF"
+						font_m_leading="1"
+						fontcat_name="fe_paragraph_heading"/>
+				</newstate>
+			</states>
+		</tx_header>
+		
+		<worldmap_scroll
+			this="34343434-0009-0000-0000000000000000"
+			id="worldmap_scroll"
+			docking="Bottom Right"
+			dock_offset="150.00,80.00"
+			uniqueguid="34343434-0009-0000-0000000000000000"
+			currentstate="34343434-0009-0001-0000000000000000"
+			defaultstate="34343434-0009-0001-0000000000000000">
+			<componentimages>
+				<component_image
+					this="34343434-0009-0001-000000000000001B"
+					uniqueguid="34343434-0009-0001-000000000000001B"
+					imagepath="ui/skins/default/1x1_transparent_white.png"/>
+			</componentimages>
+			<states>
+				<default
+					this="34343434-0009-0001-0000000000000000"
+					name="default"
+					width="600"
+					height="380"
+					uniqueguid="34343434-0009-0001-0000000000000000">
+					<imagemetrics>
+						<image
+							this="34343434-0009-0001-000000000000001A"
+							uniqueguid="34343434-0009-0001-000000000000001A"
+							componentimage="34343434-0009-0001-000000000000001B"
+							offset="0.00,0.00"
+							width="600"
+							height="380"
+							dockpoint="Bottom Right"/>
+					</imagemetrics>
+				</default>
+			</states>
+		</worldmap_scroll>
+		
+		<tx_worldmap_scroll
+			this="34343434-0010-0000-0000000000000000"
+			id="tx_worldmap_scroll"
+			allowhorizontalresize="false"
+			docking="Center"
+			priority="255"
+			tooltipslocalised="true"
+			uniqueguid="34343434-0010-0000-0000000000000000"
+			currentstate="34343434-0010-0001-0000000000000000">
+			<states>
+				<newstate
+					this="34343434-0010-0001-0000000000000000"
+					name="NewState"
+					width="340"
+					height="26"
+					uniqueguid="34343434-0010-0001-0000000000000000">
+					<component_text
+						text=""
+						textxoffset="15.00,8.00"
+						textyoffset="5.00,5.00"
+						texthbehaviour="Resize"
+						textlocalised="true"
+						textvalign="Center"
+						texthalign="Center"
+						font_m_font_name="brand_header"
+						font_m_size="12"
+						font_m_colour="#280802FF"
+						font_m_leading="1"
+						fontcat_name="fe_paragraph_heading"/>
+				</newstate>
+			</states>
+		</tx_worldmap_scroll>
+		
+	</components>
+	
+</layout>

@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<layout
+	version="137"
+	comment=""
+	precache_condition="">
+	
+	<hierarchy>
+		<root this="34343434-0000-0000-0000000000000000">
+			
+			<demons_grand_cruise_region_icon this="34343434-0001-0000-0000000000000000">
+				<demons_grand_cruise_region_icon_backglow this="34343434-0003-0000-0000000000000000"/>
+				<demons_grand_cruise_region_icon_image this="34343434-0002-0000-0000000000000000"/>
+				<demons_grand_cruise_region_icon_circle this="34343434-0004-0000-0000000000000000"/>
+				<demons_grand_cruise_region_icon_hidden this="34343434-0005-0000-0000000000000000"/>
+			</demons_grand_cruise_region_icon>
+		
+		</root>
+	</hierarchy>
+	
+	<components>
+		
+		<root
+			this="34343434-0000-0000-0000000000000000"
+			id="root"
+			tooltipslocalised="true"
+			uniqueguid="34343434-0000-0000-0000000000000000"
+			currentstate="34343434-0000-0001-0000000000000000"
+			defaultstate="34343434-0000-0001-0000000000000000">
+			<componentimages>
+				<component_image
+					this="34343434-0000-0001-000000000000001B"
+					uniqueguid="34343434-0000-0001-000000000000001B"/>
+			</componentimages>
+			<states>
+				<default
+					this="34343434-0000-0001-0000000000000000"
+					name="default"
+					interactive="true"
+					uniqueguid="34343434-0000-0001-0000000000000000">
+					<imagemetrics>
+						<image
+							this="34343434-0000-0001-000000000000001A"
+							uniqueguid="34343434-0000-0001-000000000000001A"
+							componentimage="34343434-0000-0001-000000000000001B"/>
+					</imagemetrics>
+				</default>
+			</states>
+		</root>
+		
+		<demons_grand_cruise_region_icon
+			this="34343434-0001-0000-0000000000000000"
+			id="demons_grand_cruise_region_icon"
+			docking="Top Left"
+			uniqueguid="34343434-0001-0000-0000000000000000"
+			currentstate="34343434-0001-0001-0000000000000000"
+			defaultstate="34343434-0001-0001-0000000000000000">
+			<states>
+				<default
+					this="34343434-0001-0001-0000000000000000"
+					name="default"
+					width="30"
+					height="30"
+					interactive="true"
+					uniqueguid="34343434-0001-0001-0000000000000000">
+				</default>
+			</states>
+		</demons_grand_cruise_region_icon>
+		
+		<demons_grand_cruise_region_icon_image
+			this="34343434-0002-0000-0000000000000000"
+			id="demons_grand_cruise_region_icon_image"
+			docking="Center"
+			uniqueguid="34343434-0002-0000-0000000000000000"
+			currentstate="34343434-0002-0001-0000000000000000"
+			defaultstate="34343434-0002-0001-0000000000000000">
+			<componentimages>
+				<component_image
+					this="34343434-0002-0001-000000000000001B"
+					uniqueguid="34343434-0002-0001-000000000000001B"
+					imagepath="ui/campaign ui/icons/icon_underway_karak.png"/>
+			</componentimages>
+			<states>
+				<default
+					this="34343434-0002-0001-0000000000000000"
+					name="default"
+					width="28"
+					height="28"
+					uniqueguid="34343434-0002-0001-0000000000000000">
+					<imagemetrics>
+						<image
+							this="34343434-0002-0001-000000000000001A"
+							uniqueguid="34343434-0002-0001-000000000000001A"
+							componentimage="34343434-0002-0001-000000000000001B"
+							offset="0.00,0.00"
+							width="28"
+							height="28"
+							dockpoint="Top Left"/>
+					</imagemetrics>
+				</default>
+			</states>
+		</demons_grand_cruise_region_icon_image>
+		
+		<demons_grand_cruise_region_icon_backglow
+			this="34343434-0003-0000-0000000000000000"
+			id="demons_grand_cruise_region_icon_backglow"
+			docking="Center"
+			uniqueguid="34343434-0003-0000-0000000000000000"
+			currentstate="34343434-0003-0001-0000000000000000"
+			defaultstate="34343434-0003-0001-0000000000000000">
+			<componentimages>
+				<component_image
+					this="34343434-0003-0001-000000000000001B"
+					uniqueguid="34343434-0003-0001-000000000000001B"
+					imagepath="ui/campaign ui/icons/icon_underway_karak.png"/>
+			</componentimages>
+			<states>
+				<default
+					this="34343434-0003-0001-0000000000000000"
+					name="default"
+					width="28"
+					height="28"
+					uniqueguid="34343434-0003-0001-0000000000000000">
+					<imagemetrics>
+						<image
+							this="34343434-0003-0001-000000000000001A"
+							uniqueguid="34343434-0003-0001-000000000000001A"
+							componentimage="34343434-0003-0001-000000000000001B"
+							offset="0.00,0.00"
+							width="28"
+							height="28"
+							dockpoint="Top Left"/>
+					</imagemetrics>
+				</default>
+			</states>
+		</demons_grand_cruise_region_icon_backglow>
+		
+		<demons_grand_cruise_region_icon_circle
+			this="34343434-0004-0000-0000000000000000"
+			id="demons_grand_cruise_region_icon_circle"
+			docking="Center"
+			uniqueguid="34343434-0004-0000-0000000000000000"
+			currentstate="34343434-0004-0001-0000000000000000"
+			defaultstate="34343434-0004-0001-0000000000000000">
+			<componentimages>
+				<component_image
+					this="34343434-0004-0001-000000000000001B"
+					uniqueguid="34343434-0004-0001-000000000000001B"
+					imagepath="ui/campaign ui/icons/notatport.png"/>
+			</componentimages>
+			<states>
+				<default
+					this="34343434-0004-0001-0000000000000000"
+					name="default"
+					width="50"
+					height="50"
+					uniqueguid="34343434-0004-0001-0000000000000000">
+					<imagemetrics>
+						<image
+							this="34343434-0004-0001-000000000000001A"
+							uniqueguid="34343434-0004-0001-000000000000001A"
+							componentimage="34343434-0004-0001-000000000000001B"
+							offset="0.50,0.50"
+							width="50"
+							height="50"
+							dockpoint="Top Left"/>
+					</imagemetrics>
+				</default>
+			</states>
+		</demons_grand_cruise_region_icon_circle>
+		
+		<demons_grand_cruise_region_icon_hidden
+			this="34343434-0005-0000-0000000000000000"
+			id="demons_grand_cruise_region_icon_hidden"
+			docking="Center"
+			uniqueguid="34343434-0005-0000-0000000000000000"
+			currentstate="34343434-0005-0001-0000000000000000"
+			defaultstate="34343434-0005-0001-0000000000000000">
+			<componentimages>
+				<component_image
+					this="34343434-0005-0001-000000000000001B"
+					uniqueguid="34343434-0005-0001-000000000000001B"
+					imagepath="ui/campaign ui/icons/hidden_port.png"/>
+			</componentimages>
+			<states>
+				<default
+					this="34343434-0005-0001-0000000000000000"
+					name="default"
+					width="50"
+					height="50"
+					uniqueguid="34343434-0005-0001-0000000000000000">
+					<imagemetrics>
+						<image
+							this="34343434-0005-0001-000000000000001A"
+							uniqueguid="34343434-0005-0001-000000000000001A"
+							componentimage="34343434-0005-0001-000000000000001B"
+							offset="0.50,0.50"
+							width="50"
+							height="50"
+							dockpoint="Top Left"/>
+					</imagemetrics>
+				</default>
+			</states>
+		</demons_grand_cruise_region_icon_hidden>
+		
+	</components>
+</layout>
