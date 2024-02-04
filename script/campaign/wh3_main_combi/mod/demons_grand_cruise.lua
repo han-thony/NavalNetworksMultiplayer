@@ -221,13 +221,13 @@ function demons_grand_cruise.teleportCharacterToRegionByNetwork(cRegion)
 		return
 	end
 	
-    cm:treasury_mod(cm:get_local_faction(true):name(), -demons_grand_cruise.getCostToUseRailNetwork(cRegion, cCharacter))
+    local cost = -demons_grand_cruise.getCostToUseRailNetwork(cRegion, cCharacter)
+    local trigger_message = "tc_treasury_mod(faction, cost):"..tostring(cost)
+    CampaignUI.TriggerCampaignScriptEvent(cm:get_local_faction(true):command_queue_index(), trigger_message)
 	
-	local x, y = cm:find_valid_spawn_location_for_character_from_settlement(cCharacter:faction():name(), cRegion:name(), false, true)
-	--cm:teleport_military_force_to(cCharacter:military_force(), x, y)
-	
-	cm:teleport_to(cm:char_lookup_str(cCharacter), x, y)
-	cm:zero_action_points(cm:char_lookup_str(cCharacter))
+    local trigger_message = "tc_teleport(character, regionName):"..cRegion:name()
+    CampaignUI.TriggerCampaignScriptEvent(nSelectedCharacterCQI, trigger_message)
+
 	cm:trigger_2d_ui_sound("UI_CAM_HUD_DLC21_Sea_Lanes_Panel_Travel", 0) --UI_CAM_PRO_HUD_Occupy_First_Settlement
 	--cm:scroll_camera_with_cutscene_to_character(1, nil, nSelectedCharacterCQI)
 	
